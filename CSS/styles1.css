@@ -73,6 +73,14 @@ a.logo {
   font-weight: 700;
   color: #757575;
 }
+.header-right-navigation a {
+
+}
+.header-icon{
+  width: 20px;
+  height: 16px;
+  fill: currentColor;
+}
 .main-menu {
   display: flex;
   list-style: none;
@@ -91,11 +99,11 @@ a.logo {
   letter-spacing: 0.02em;
 }
 .moto-section{
-  background-color: #2f303a;
-  background-image: url("/images/main_image.jpg");
-    /* background-image: linear-gradient(rgba(255,28,28,0.2));*/
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #2f303a; 
+  background-image: url("/images/bg.jpg"), url("/images/main_image.jpg"),url("/images/img_overlay.jpg")
+  ,linear-gradient(to right,rgba(47, 48, 58, 1),rgba(47, 48, 58, 0.4));
+/*  background-repeat: no-repeat;
+  background-size: cover; */
   width: 100%;
   height: 600px;
   display: flex;
@@ -242,6 +250,13 @@ a.logo {
 .social-links-link:focus{
   background-color:#2196f3;
 }
+.social-links-image {
+  fill: #afb1b8;
+}
+.social-links-link:hover .social-links-image,
+.social-links-link:focus .social-links-image{
+  fill:#ffffff;
+}
 .social-links-image{
   width: 20px;
   height: 20px;
@@ -261,20 +276,41 @@ a.logo {
   justify-content: space-between;
   list-style: none;
 }
-.regular-customers li {
-display: flex;
-width: 170px;
-height: 90px;
-border: solid;
-border-width: 1px;
-border-color: #AFB1B8;
-justify-content: center;
+.customers-labels{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.customers-labels-link:hover ,
+.customers-labels-link:focus {
+  color: #2196f3;
+  border-color: #2196f3 ;
+  cursor: pointer;
+}
+.customers-labels-link:hover .customers-labels-link-image ,
+.customers-labels-link:focus .customers-labels-link-image{
+  fill: #2196f3;
+}
+.customers-labels-link{
+  width: 170px;
+  height: 90px;
+  display: flex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
 }
 .regular-customers- li:hover,
 .regular-customers li:focus {
   color: #2196f3;
   border-color: #2196f3 ;
   cursor: pointer;
+}
+.footer .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; 
 }
 .footer{
   padding: 50px 0;
@@ -306,6 +342,36 @@ justify-content: center;
 .footer-container address {
   font-style: normal;
 }
+.social-links-footer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.social-links-footer ul{
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+}
+.social-links-footer h2{
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight:700 ;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+}
+.social-links-link-footer{
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.social-links-link-footer .social-links-image{
+  fill: #FFFFFF;
+}
+
 
 /* portfolio */
 
@@ -372,6 +438,11 @@ button:focus {
   border-color: #eeeeee;
   margin-bottom: 30px;
   margin-right: 30px;
+}
+.pictures li:hover,
+.pictures li :focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .pictures-tittle{
   padding: 20px;

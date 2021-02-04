@@ -73,9 +73,6 @@ a.logo {
   font-weight: 700;
   color: #757575;
 }
-.header-right-navigation a {
-
-}
 .header-icon{
   width: 20px;
   height: 16px;
@@ -100,7 +97,7 @@ a.logo {
 }
 .moto-section{
   background-color: #2f303a; 
-  background-image: url("/images/bg.jpg"), url("/images/main_image.jpg"),url("/images/img_overlay.jpg")
+  background-image: url("/images/main_image.jpg"),url("/images/img_overlay.jpg")
   ,linear-gradient(to right,rgba(47, 48, 58, 1),rgba(47, 48, 58, 0.4));
 /*  background-repeat: no-repeat;
   background-size: cover; */

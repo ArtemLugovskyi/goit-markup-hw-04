@@ -444,17 +444,6 @@ button:focus {
 .pictures-tittle{
   padding: 20px;
 }
-/*.pictures li {
-  width: calc((100%-60px)/3);
-  list-style: none;
-  display: flex;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eeeeee;
-  margin-bottom: 30px;
-  margin-right: 30px;
-}*/
-
 .pictures h3 {
   font-size: 18px;
   font-weight: 700;
